@@ -74,8 +74,10 @@ plugins=(
 zsh-autosuggestions
 zsh-syntax-highlighting
 )
-
 source $ZSH/oh-my-zsh.sh
+
+# Plugin configuration
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#aaaaaa"
 
 # User configuration
 
