@@ -1,4 +1,3 @@
-# flavor options
 OPTIONS=catname:Ctesiphus
 OPTIONS=dogname:Biff Barko
 OPTIONS=horsename:Eduroam
