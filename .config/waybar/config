@@ -1,0 +1,60 @@
+// waybar config from https://github.com/meistermo/dotfiles
+// config options at https://github.com/Alexays/Waybar/wiki/Configuration
+
+{
+    "height": 26, 
+    "modules-left": ["sway/workspaces", "sway/scratchpad", "sway/mode"],
+    "modules-center": ["clock"],
+    "modules-right": ["wireplumber", "backlight", "cpu", "memory", "network", "battery"],
+    "sway/window": {
+        "format":"; {}"
+    },
+    "sway/mode": {
+        "format": "mode: {}"
+    },
+    "clock": {
+	"format": "{:%d.%m.%Y  %H:%M}"
+    },
+    "cpu": {
+        "states": {
+	    "above-75": 75,
+	    "above-50": 50
+	},
+	"format": "[ CPU:  {usage} ]"
+    },
+    "memory": {
+        "states": {
+	    "above-75": 75,
+	    "above-50": 50
+	},
+	"format": "[ RAM:  {} ]"
+    },
+    "backlight": {
+	"format": "[ BLgt: {} ]"
+    },
+    "battery": {
+        "states": {
+	    "s100": 100,
+	    "s95": 95,
+	    "s20": 20,
+	    "s5": 5
+        },
+        "format": "( Pwr:  {} ]",
+	"format-charging": "[ Pwr:  {} )",
+        "format-full": "[ Pwr:  {} ]"
+    },
+    "network": {
+    	"format": "[ Net:  {signalStrength} ]",
+	"format-ethernet": "[ Net:  w  ]", 
+        "format-disconnected": "[ Net:  no ]",
+	"tooltip-format-wifi": "{essid} / {ipaddr} / {signalStrength}",
+	"tooltip-format-ethernet": "{ipaddr}"
+    },
+    "wireplumber": {
+        "scroll-step": 1,
+	"max-volume": 95,
+    	"format": "[ Vol:  {volume} ]",
+    	"format-muted": "[ Vol:  no ]"
+    }
+}
+

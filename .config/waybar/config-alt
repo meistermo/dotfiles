@@ -1,0 +1,144 @@
+// waybar config from https://github.com/meistermo/dotfiles
+// config options at https://github.com/Alexays/Waybar/wiki/Configuration
+
+{
+    "height": 26, 
+    "modules-left": ["sway/workspaces", "sway/scratchpad", "sway/mode"],
+    "modules-center": ["clock"],
+    "modules-right": ["wireplumber", "backlight", "cpu", "memory", "network", "battery"],
+    "sway/window": {
+        "format":"; {}"
+    },
+    "sway/mode": {
+        "format": "mode: {}"
+    },
+    "clock": {
+	"format": "{:%d.%m.%Y  %H:%M}"
+    },
+    "cpu": {
+        "states": {
+	    "above-75": 75,
+	    "above-50": 50
+	},
+        "format": "[{icon}]",
+        "format-icons": [
+		"::::::::::", 
+		"#:::::::::", 
+		"##::::::::", 
+		"###:::::::", 
+		"####::::::", 
+		"#####:::::", 
+		"######::::", 
+		"#######:::", 
+		"########::", 
+		"#########:", 
+		"##########"
+	],
+	"format-alt": "[ CPU:  {usage} ]"
+    },
+    "memory": {
+        "states": {
+	    "above-75": 75,
+	    "above-50": 50
+	},
+        "format": "[{icon}]",
+        "format-icons": [
+		"::::::::::", 
+		"#:::::::::", 
+		"##::::::::", 
+		"###:::::::", 
+		"####::::::", 
+		"#####:::::", 
+		"######::::", 
+		"#######:::", 
+		"########::", 
+		"#########:", 
+		"##########"
+	],
+	"format-alt": "[ RAM:  {} ]"
+    },
+    "backlight": {
+        "format": "[{icon}]",
+        "format-icons": [
+		"::::::::::", 
+		"#:::::::::", 
+		"##::::::::", 
+		"###:::::::", 
+		"####::::::", 
+		"#####:::::", 
+		"######::::", 
+		"#######:::", 
+		"########::", 
+		"#########:", 
+		"##########"
+	],
+	"format-alt": "[ BLgt: {} ]"
+    },
+    "battery": {
+        "states": {
+	    "above-95": 95,
+	    "above-20": 20,
+	    "above-10": 10,
+	    "above-5": 5
+        },
+        "format": "({icon}]",
+	"format-charging": "[{icon})",
+        "format-full": "[{icon}]",
+        "format-icons": [
+		"::::::::::", 
+		"#:::::::::", 
+		"##::::::::", 
+		"###:::::::", 
+		"####::::::", 
+		"#####:::::", 
+		"######::::", 
+		"#######:::", 
+		"########::", 
+		"#########:", 
+		"##########"
+	],
+	"format-alt": "[ Pwr:  {} ]"
+    },
+    "network": {
+    	"format": "[{icon}]",
+	"format-ethernet": "[---wire---]", 
+        "format-disconnected": "[--no-con--]",
+	"format-icons": [
+		"::::::::::", 
+		"#:::::::::", 
+		"##::::::::", 
+		"###:::::::", 
+		"####::::::", 
+		"#####:::::", 
+		"######::::", 
+		"#######:::", 
+		"########::", 
+		"#########:", 
+		"##########"
+	],	
+        "format-alt": "[ Net:  {signalStrength} ]",
+	"tooltip-format-wifi": "{essid} / {ipaddr} / {signalStrength}",
+	"tooltip-format-ethernet": "{ipaddr}"
+    },
+    "wireplumber": {
+        "scroll-step": 1,
+	"max-volume": 95,
+    	"format": "[{icon}]",
+    	"format-muted": "[-no-sound-]",
+	"format-icons": [ 
+		"::::::::::",
+		"#:::::::::", 
+		"##::::::::", 
+		"###:::::::", 
+		"####::::::", 
+		"#####:::::", 
+		"######::::", 
+		"#######:::", 
+		"########::", 
+		"#########:", 
+		"##########"
+	],
+	"format-alt": "[ Vol:  {volume} ]"
+    }
+}
+
