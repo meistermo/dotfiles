@@ -104,5 +104,3 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#aaaaaa"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-neofetch
