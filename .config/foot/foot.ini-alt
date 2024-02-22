@@ -1,5 +1,5 @@
 # foot config from https://github.com/meistermo/dotfiles
-# for use with sway
+# for use with GNOME
 
 # -*- conf -*-
 
@@ -111,8 +111,8 @@ size=0
 # color=<foreground color>
 # hide-when-maximized=no
 # double-click-to-maximize=yes
-# border-width=2
-# border-color=ffffff
+border-width=2
+border-color=ffffffff
 # button-width=26
 # button-color=<background color>
 # button-minimize-color=<regular4>
@@ -136,7 +136,7 @@ size=0
 # spawn-terminal=Control+Shift+n
 # minimize=none
 # maximize=none
-# fullscreen=Control+f
+fullscreen=Control+f
 # pipe-visible=[sh -c "xurls | fuzzel | xargs -r firefox"] none
 # pipe-scrollback=[sh -c "xurls | fuzzel | xargs -r firefox"] none
 # pipe-selected=[xargs -r firefox] none
