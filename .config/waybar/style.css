@@ -104,6 +104,10 @@ button {
     color: #ffaa00;
 }
 
+#scratchpad {
+    color: #00ff00;
+}
+
 #window,
 #workspaces {
     margin: 0;

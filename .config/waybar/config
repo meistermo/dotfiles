@@ -17,15 +17,17 @@
     },
     "cpu": {
         "states": {
-	    "above-75": 75,
-	    "above-50": 50
+	    "s100": 100,
+	    "s75": 75,
+	    "s50": 50
 	},
 	"format": "[ CPU:  {usage} ]"
     },
     "memory": {
         "states": {
-	    "above-75": 75,
-	    "above-50": 50
+	    "s100": 100,
+	    "s75": 75,
+	    "s50": 50
 	},
 	"format": "[ RAM:  {} ]"
     },
@@ -39,8 +41,8 @@
 	    "s20": 20,
 	    "s5": 5
         },
-        "format": "( Pwr:  {} ]",
-	"format-charging": "[ Pwr:  {} )",
+        "format": "[ Pwr: ‹{} ]",
+	"format-charging": "[ Pwr: {}› ]",
         "format-full": "[ Pwr:  {} ]"
     },
     "network": {
