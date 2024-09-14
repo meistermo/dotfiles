@@ -2,6 +2,9 @@
 SELECTION=$(slurp)
 FILENAME=screenshot-$(date '+%Y-%m-%d-%H:%M:%S').png
 
+if [[ -z "$SELECTION" ]]; then
+	exit 1
+fi
 
 grim -g "$SELECTION" ~/Pictures/Screenshots/$FILENAME
 grim -g "$SELECTION" - | wl-copy
