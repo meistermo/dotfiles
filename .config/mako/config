@@ -1,0 +1,20 @@
+font=Ubuntu Mono 9.75
+
+# Styling options
+background-color=#000000
+text-color=#FFFFFF
+border-color=#FFFFFF
+
+width=450
+height=64
+
+border-size=2
+margin=10
+
+max-icon-size=64
+
+# Behaviour
+default-timeout=5000
+ignore-timeout=1
+max-visible=3
+anchor=top-center
