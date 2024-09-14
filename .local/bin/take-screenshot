@@ -1,0 +1,9 @@
+#!/bin/bash
+SELECTION=$(slurp)
+FILENAME=screenshot-$(date '+%Y-%m-%d-%H:%M:%S').png
+
+
+grim -g "$SELECTION" ~/Pictures/Screenshots/$FILENAME
+grim -g "$SELECTION" - | wl-copy
+
+notify-send "Screen captured." "Saved as $FILENAME." -i ~/Pictures/Screenshots/$FILENAME
