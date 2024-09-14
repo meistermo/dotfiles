@@ -1,0 +1,8 @@
+OPTIONS=catname:Ctesiphus
+OPTIONS=dogname:Biff Barko
+OPTIONS=horsename:Eduroam
+OPTIONS=fruit:avocado
+
+OPTIONS=!autopickup
+OPTIONS=force_invmenu
+OPTIONS=number_pad:1
