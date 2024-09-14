@@ -1,0 +1,132 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: 'Ubuntu Mono', FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+}
+
+window#waybar {
+    background-color: rgba(0, 0, 0, 1);
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+button {
+    /* Use box-shadow instead of border so the text isn't offset */
+    box-shadow: inset 0 -3px transparent;
+    /* Avoid rounded borders under each button name */
+    border: none;
+    border-radius: 0;
+}
+
+#workspaces button {
+    padding: 0;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+#workspaces button.empty {
+    color: #888888;
+}
+
+#workspaces button.focused {
+    color: #ffff00;
+}
+
+#workspaces button.active {
+    color: #ffff00;
+}
+
+#workspaces button.urgent {
+    color: #ff0000;
+}
+
+#mode {
+    background-color: #ff0000;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#backlight,
+#network,
+#wireplumber,
+#mode,
+#scratchpad,
+#mpd {
+    padding: 0 10px;
+    color: #ffffff;
+}
+
+#battery.s100 {
+    color: #00ff00;
+}
+
+#battery.s95 {
+    color: #ffffff;
+}
+
+#battery.s20 {
+    color: #ffaa00;
+}
+
+#battery.s5 {
+    color: #ff0000;
+}
+
+#memory.s100 {
+    color: #ff0000;
+}
+
+#memory.s75 {
+    color: #ffaa00;
+}
+
+#memory.s50 {
+    color: #ffffff;
+}
+
+#cpu.s100 {
+    color: #ff0000;
+}
+
+#cpu.s75 {
+    color: #ffaa00;
+}
+
+#cpu.s50 {
+    color: #ffffff;
+}
+
+#network.disabled, #network.disconnected {
+    color: #ff0000;
+}
+
+#wireplumber.muted {
+    color: #ffaa00;
+}
+
+#scratchpad {
+    color: #00ff00;
+}
+
+#window,
+#workspaces {
+    margin: 0;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
