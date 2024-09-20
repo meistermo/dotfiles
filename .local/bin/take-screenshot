@@ -1,5 +1,5 @@
 #!/bin/bash
-SELECTION=$(slurp)
+SELECTION=$(slurp -d)
 FILENAME=screenshot-$(date '+%Y-%m-%d-%H:%M:%S').png
 
 if [[ -z "$SELECTION" ]]; then
