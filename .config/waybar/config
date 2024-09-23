@@ -20,8 +20,10 @@
         "network",
         "cpu",
         "memory",
-        "battery",
-        "tray"
+	"custom/pre-tray",
+        "tray",
+	"custom/post-tray",
+	"battery"
     ],
     "hyprland/workspaces": {
         "persistent-workspaces": {
@@ -80,5 +82,13 @@
         "format-disconnected": "[ Net:  no ]",
 	    "tooltip-format-wifi": "{essid} / {ipaddr} / {signalStrength}",
 	    "tooltip-format-ethernet": "{ipaddr}"
+    },
+    "custom/pre-tray": {
+	"format": "[ SysTray: ",
+	"tooltip": false
+    },
+    "custom/post-tray": {
+    	"format": " ]",
+	"tooltip": false
     }
 }
