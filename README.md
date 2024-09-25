@@ -1,3 +1,4 @@
+
 ### Configs
 terminal-emulator = foot  
 wayland-compositor = hyprland  
